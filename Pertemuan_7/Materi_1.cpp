@@ -1,12 +1,23 @@
 #include <iostream>
-#include <conio.h>
-#include <string.h>
+
 using namespace std;
 
-main() {
-   char tanya[50] = " Siapakah Nama Anda ?";
-   cout << "kalimat tanya : " << tanya << endl;
-   strcat(tanya, "  Nama Saya Edward Pieters");
-   cout << "kalimat tanya dengan jawaban: " << tanya << endl;
-   getch();
+
+int main() {
+    int a[3][3] = {
+        {1,2,3},
+        {4,5,6},
+        {7,8,9}
+        
+    };
+  
+    for(int i =0; i<3; i++){
+        for (int j=0; j<3; j++)
+        {
+            cout<<"Element ke - ["<<i<<"]["<<j<<"] " << "Nilainya : ";
+            cout<<a[i][j]<<endl;
+        }
+    }
+
+    return 0;
 }
